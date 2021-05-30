@@ -1,10 +1,7 @@
 import './todo.css'
-// import {myTodo, statusChange, changeIndex, removeIndex, isEdit, changeTitle } from '../Actions';
 import { Link } from "react-router-dom";
-
-
 import React, {   useState } from 'react';
-import {connect, useDispatch} from 'react-redux';
+import {connect} from 'react-redux';
 import {newTodo } from '../Actions';
 
 
@@ -20,11 +17,11 @@ import {newTodo } from '../Actions';
         setComment("");
         setName("");
     };
-    return (        <>
+    return (    
+        <>
             <Link to="/feedbacks">
-
-    <button>Feedbacks</button></Link>
-        {/* // <form onSubmit={handleSubmit}> */}
+                <button>Feedbacks</button>
+            </Link>
             <span className='forms' >
                 <input
                 type="text"
@@ -33,7 +30,7 @@ import {newTodo } from '../Actions';
                 className='input'
                 placeholder="Enter Name"
                 onChange={e => setName(e.target.value)}
-            /> 
+                /> 
                 <input
                 type="text"
                 value={email}
@@ -41,7 +38,7 @@ import {newTodo } from '../Actions';
                 className='input'
                 placeholder="Enter Email"
                 onChange={e => setEmail(e.target.value)}
-            /> 
+                /> 
                 <input
                 type="text"
                 value={comment}
@@ -49,19 +46,13 @@ import {newTodo } from '../Actions';
                 className='input'
                 placeholder="Enter Your Feedback"
                 onChange={e => setComment(e.target.value)}
-            />  <button className='sbtbtn' onClick={handleSubmit}> submit</button>
+                />
+                <button className='sbtbtn' onClick={handleSubmit}> Submit</button>
             </span>
-           
-        {/* // </form> */}
         </>
     )
 }
-// const mapStateToProps= state =>{
-//     const {items} =state.todo
-//     return{
-//      items   
-//     }
-// }
+
 const mapDispatchToProps = (dispatch) =>{
     return{
       
