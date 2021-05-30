@@ -23,7 +23,7 @@ import {newTodo } from '../Actions';
     return (        <>
             <Link to="/feedbacks">
 
-    <button>feedbacks</button></Link>
+    <button>Feedbacks</button></Link>
         {/* // <form onSubmit={handleSubmit}> */}
             <span className='forms' >
                 <input
