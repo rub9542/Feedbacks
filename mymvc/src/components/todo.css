@@ -412,7 +412,12 @@
     width: 20%;
     justify-content:center;
     height: 7%;
+    align-items: center;
+    border:none;
     font-size: 20px;
+  }
+  .sbtbtn:hover{
+    box-shadow: 3px 3px 4px red;
   }
   /* .bckbtn{
     display: flex;
