@@ -17,10 +17,10 @@ export default function Completed()  {
     dataSource={items}
     renderItem={item => (
       <li className='list-item'>
+        
         <Comment
-        hoverable
-          author={item.name}
-          content={`Comment is ${item.comment}`}
+          author={<h3>{item.name}</h3>}
+          content={item.comment}
         />
       </li>
     )}

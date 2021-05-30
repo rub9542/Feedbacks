@@ -4,11 +4,7 @@ import { combineReducers } from 'redux';
 
 const INITIAL_STATE ={
     items:[
-        {name:'Learn Javascript', email:'Incomplete', comment: 'good' },
-        {name:'Learn PHP', email:'Incomplete', comment: 'ssssssssssssssssssssssssssssssssssssssssssd' },
-        {name:'Learn Angular', email:'Incomplete', comment: 'good' },
-        {name:'Learn Python', email:'Incomplete', comment: 'good' },
-        {name:'Learn Java', email:'Incomplete', comment: 'good' },
+        
     ]
 }
 
